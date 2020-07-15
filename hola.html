@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div class="container">  
+
+<!-- 
+3.  WEB: En HTML, construir una tabla de 3 columnas con los datos de Producto, Nombre y Categoría
+ -->
+ <div class="row">
+   <h4>1. BASE DE DATOS (SQL): Dadas las tablas DIVISIONES (Campo: ID_DIVISION,NOMBRE), GRUPOS(ID_GRUPO, ID DIVISION, NOMBRE) y SUBGRUPO(ID_SUBG, ID_GRUPO, NOMBRE), elaborar un query en el cual se cuente cuantos subgrupos hay en una DIVISION? Las Divisiones tienen Grupos y estos a su vez tienen Subgrupos.</h4>
+   
+
+
+   <code>
+     SELECT * FROM DIVISIONES  D INNER JOIN ( <br> 
+  SELECT  ID_DIVISION, COUNT( ID_DIVISION) FROM GRUPOS <br>
+  GROUP BY ID_DIVISION <br>
+) G ON D.ID_DIVISION = G.ID_DIVISION; <br>
+
+   </code>
+ </div>
+
+
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+<div class="row">
+  <h4>2.  .NET: En C#, Crear una Lista con la clase ALUMNOS (ID, NOMBRE) y añadir datos a dicha Lista. Si su habilidad no es C#, use Javascript.</h4>
+  <code>
+    let alumnos = class { <br>
+  constructor(id, name) { <br>
+    this.id = id; <br>
+    this.name = name; <br>
+  }<br>
+}<br>
+let hoola = new alumnos(1, 'Oscar');<br>
+
+console.log(hoola)<br>
+  </code>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <h4>3. WEB: En HTML, construir una tabla de 3 columnas con los datos de Producto, Nombre y Categoría</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Nombre </th>
+        <th>Categoría</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>cama</td>
+        <td>OScar </td>
+        <td>Hogar</td>
+      </tr>
+    
+    </tbody>
+  </table>
+  <!-- _________________________ -->
+  <!-- _________________________ -->
+  <!-- _________________________ -->
+  <!-- _________
+  4.  WEB: En Javascript, construir un Hyperlink llamado Prueba y al dar click en dicho enlace 
+    redirigirlo a la pagina www.wikipedia.org
+    ________________ -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4>4.  WEB: En Javascript, construir un Hyperlink llamado Prueba y al dar click en dicho enlace redirigirlo a la pagina www.wikipedia.org</h4>
+  <div class="row">
+	  <div class="col-12">
+		<h5>construir un Hyperlink </h5>
+		<a href="http://www.wikipedia.org" >Prueba </a>
+		<p id="demo"></p>
+	  </div>	
+  </div>
+
+
+
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+  <h4>5.  WINDOWS: En Windows Server, qué se necesita instalar para que tenga acceso multiusuario y nombrar una opción a través de la cual se configura.</h4>
+<p>nunca e configurado en servicio </p>
+  <br>
+  <br>
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<h4>6.  HTML: Construya una lista de opciones (combo de opciones) en la cual se pueda obtener la opción escogida.</h4>
+<p>no supe muy bien que tenia que hacer</p>
+
+<div class="row">
+	<select name="hola" id="mysele">
+		<option value="1" onclick="operation(1)">peracion1</option>
+		<option value="2" onclick="operation(2)">peracion2</option>
+		<option value="3" onclick="operation(3)">peracion3</option>
+		<option value="4" onclick="operation(4)">peracion4</option>
+	</select>
+</div>
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+<!-- ________________ -->
+
+  <br>
+  <br>
+  <br>
+  <div class="row">
+	  <h4>7. CSS: Dibujar un cuadrado (html) y al pasar el mouse, cambiarle el color de fondo.
+			</h4>
+	  <div class="caja"></div>
+  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<h4>8.  AJAX: Hacer un llamado al servidor y retornar 2 valores (de cualquier tipo).</h4>
+<p>Construi un mini backend que esta montado en un servidor</p>
+   <h4>9. Javascript: Hacer un ejemplo de un estructura JSON que contenga Alumno, Nombre y sus materias.</h4>
+   <p>al momento de de hacer consultas al backend esos datos los convierto en formato JSON</p>
+
+
+<h4>10. HTML: Defina una grid con dos celdas (boostrap).</h4>
+    
+         </h4>
+    <div class="listAjax container">
+      
+    </div>
+</div>
+<script type="text/javascript" src="./test.json"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>

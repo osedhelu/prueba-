@@ -1,0 +1,13 @@
+.caja { 
+	font-family: sans-serif; 
+	font-size: 18px; 
+	font-weight: 400; 
+	color: #000; 
+	background:#ee0467;
+	width: 100px;
+	height: 100px; 
+	
+}
+.caja:hover {
+	background: yellow;
+}
